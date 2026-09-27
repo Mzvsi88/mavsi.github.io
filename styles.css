@@ -1114,4 +1114,222 @@ footer a:hover {
     opacity: 1;
     transform: none;
   }
+}/* MOBILE FIX - MAVSI */
+
+@media screen and (max-width: 1000px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    width: 100%;
+    padding: 0 6vw;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .hero {
+    width: 100%;
+    min-height: 100svh;
+  }
+
+  .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-content {
+    width: 88%;
+    margin-left: 6%;
+    padding-top: 80px;
+  }
+
+  .hero h1 {
+    font-size: clamp(4rem, 18vw, 7rem);
+  }
+
+  .hero-description {
+    max-width: 90%;
+  }
+
+  .section {
+    width: 100%;
+    padding: 90px 6%;
+  }
+
+  .intro {
+    display: block;
+    min-height: auto;
+  }
+
+  .intro-content {
+    width: 100%;
+    margin-top: 45px;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading > div {
+    margin-bottom: 25px;
+  }
+
+  .projects {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cinema-break {
+    width: 100%;
+    height: 65svh;
+  }
+
+  .cinema-break video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  .stats {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .process-item {
+    width: 100%;
+    grid-template-columns: 45px 1fr;
+  }
+
+  .gallery-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .words {
+    width: 100%;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+
+/* EXTRA SMALL PHONES */
+
+@media screen and (max-width: 600px) {
+
+  .hero-content {
+    margin-left: 6%;
+    width: 88%;
+  }
+
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero h1 span {
+    font-size: .6rem;
+  }
+
+  .hero-description {
+    font-size: .85rem;
+  }
+
+  .section {
+    padding: 80px 6%;
+  }
+
+  .section-heading h2 {
+    font-size: 3rem;
+  }
+
+  .large-text {
+    font-size: 3rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .service h3 {
+    font-size: 2rem;
+  }
+
+  .process-item h3 {
+    font-size: 1.7rem;
+  }
+
+  .contact-content h2 {
+    font-size: 4rem;
+  }
+
+  footer {
+    padding: 30px 6%;
+  }
 }
