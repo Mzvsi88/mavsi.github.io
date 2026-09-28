@@ -1332,4 +1332,83 @@ footer a:hover {
   footer {
     padding: 30px 6%;
   }
+}/* =========================================
+   MAVSI VIDEO PROJECTS
+========================================= */
+.video-project {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  background: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-project video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  background: #050505;
+  transition: transform 0.7s ease;
+}
+/* Cinematic dark overlay */
+.video-project::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.25)
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+/* Number */
+.video-project .project-number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+/* Hover layer */
+.video-project .project-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+.video-project:hover .project-overlay {
+  opacity: 1;
+}
+.video-project:hover video {
+  transform: scale(1.03);
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .video-project {
+    aspect-ratio: 9 / 16;
+  }
+  .video-project video {
+    transform: none !important;
+  }
+  .video-project .project-overlay {
+    opacity: 1;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 20px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.55),
+      transparent 50%
+    );
+  }
 }
