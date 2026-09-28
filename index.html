@@ -1,42 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Mavsi | The Creator</title>
-
+  <title>Mavsi | The Creator — Emmanuel Chigozirim</title>
   <meta
     name="description"
-    content="Mavsi — Nigerian cinematographer, director and visual storyteller."
+    content="Emmanuel Chigozirim, known as Mavsi, is a Nigerian cinematographer, director and visual storyteller from Delta State, Nigeria."
   >
-
+  <meta name="author" content="Emmanuel Chigozirim">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mavsi | The Creator">
+  <meta
+    property="og:description"
+    content="Emmanuel Chigozirim — Nigerian Cinematographer, Director & Visual Storyteller."
+  >
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Mavsi | The Creator">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
     rel="stylesheet"
   >
-
   <link rel="stylesheet" href="styles.css">
+  <!-- PERSON / PROFILE SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": "Mavsi | The Creator",
+    "description": "Official portfolio of Emmanuel Chigozirim, Nigerian cinematographer, director and visual storyteller.",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Emmanuel Chigozirim",
+      "alternateName": [
+        "Mavsi",
+        "Mavsi | The Creator",
+        "@heismavsi"
+      ],
+      "jobTitle": [
+        "Cinematographer",
+        "Director",
+        "Visual Storyteller"
+      ],
+      "description": "Nigerian cinematographer, director and visual storyteller from Delta State, Nigeria.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Delta State",
+        "addressCountry": "NG"
+      },
+      "sameAs": [
+        "https://www.instagram.com/heismavsi/",
+        "https://www.tiktok.com/@heismavsi"
+      ]
+    }
+  }
+  </script>
 </head>
-
-
 <body>
-
   <!-- LOADING SCREEN -->
   <div class="page-loader">
     <span>MAVSI</span>
   </div>
-
-
   <!-- NAVIGATION -->
   <header class="navbar">
-
-    <a href="#home" class="logo">MAVSI</a>
-
+    <a href="#home" class="logo">
+      MAVSI
+    </a>
     <nav class="desktop-nav">
       <a href="#work">Work</a>
       <a href="#about">About</a>
@@ -44,23 +76,25 @@
       <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
-
-    <button class="menu-toggle" aria-label="Open menu">
+    <button
+      class="menu-toggle"
+      aria-label="Open menu"
+      type="button"
+    >
       <span></span>
       <span></span>
       <span></span>
     </button>
-
   </header>
-
-
   <!-- MOBILE MENU -->
   <div class="mobile-menu">
-
-    <button class="menu-close" aria-label="Close menu">
+    <button
+      class="menu-close"
+      aria-label="Close menu"
+      type="button"
+    >
       ×
     </button>
-
     <nav>
       <a href="#home">Home</a>
       <a href="#work">Work</a>
@@ -69,767 +103,671 @@
       <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
-
   </div>
-
-
   <main>
-
     <!-- HERO -->
     <section class="hero" id="home">
-
       <video
         class="hero-video"
         autoplay
         muted
         loop
         playsinline
-        poster="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=2000&q=90"
+        preload="metadata"
       >
         <source src="media/hero.mp4" type="video/mp4">
       </video>
-
       <div class="hero-overlay"></div>
-
       <div class="hero-content reveal">
-
         <p class="eyebrow">
-          CINEMATOGRAPHER • DIRECTOR • CREATIVE
+          EMMANUEL CHIGOZIRIM
         </p>
-
         <h1>
           Mavsi
           <span>The Creator</span>
         </h1>
-
+        <p class="role">
+          Cinematographer • Director • Visual Storyteller
+        </p>
+        <p class="location">
+          Delta State, Nigeria
+        </p>
         <p class="hero-description">
           Creating cinematic visuals that turn moments,
           people and ideas into unforgettable stories.
         </p>
-
         <div class="hero-buttons">
-
           <a href="#work" class="btn btn-primary">
             Explore my work
           </a>
-
           <a href="#contact" class="btn btn-outline">
             Let's work together
           </a>
-
         </div>
-
       </div>
-
       <div class="scroll-indicator">
         <span>SCROLL</span>
         <div></div>
       </div>
-
     </section>
-
-
     <!-- INTRO -->
     <section class="intro section">
-
       <div class="section-label reveal">
         01 — INTRODUCTION
       </div>
-
       <div class="intro-content reveal">
-
         <p class="large-text">
           I create visuals that feel
           <em>alive.</em>
         </p>
-
         <p>
-          From cinematic portraits to music visuals,
-          campaigns and personal stories, my goal is simple:
-          make people feel something.
+          I'm Emmanuel Chigozirim, known creatively as Mavsi.
+          A Nigerian cinematographer, director and visual
+          storyteller from Delta State, creating visual stories
+          designed to make people feel something.
         </p>
-
       </div>
-
     </section>
-
-
     <!-- WORK -->
     <section class="work section" id="work">
-
       <div class="section-heading reveal">
-
         <div>
-          <span class="section-number">02</span>
-          <h2>Selected Work</h2>
+          <span class="section-number">
+            02
+          </span>
+          <h2>
+            Selected Work
+          </h2>
         </div>
-
         <p>
           A collection of visual stories,
           creative projects and cinematic moments.
         </p>
-
       </div>
-
-
       <div class="projects">
-
+        <!-- VIDEO 01 -->
         <article class="project-card reveal">
-
-          <div class="project-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1600&q=85"
-              alt="Cinematic production"
+          <div class="project-image video-project">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
             >
-
-            <div class="project-number">01</div>
-
+              <source
+                src="media/video1.mp4"
+                type="video/mp4"
+              >
+            </video>
+            <div class="project-number">
+              01
+            </div>
             <div class="project-overlay">
-              <span>VIEW PROJECT →</span>
+              <span>
+                WATCH PROJECT →
+              </span>
             </div>
-
           </div>
-
           <div class="project-info">
-
             <div>
-              <h3>After Dark</h3>
-              <p>Cinematic Film</p>
+              <h3>
+                After Dark
+              </h3>
+              <p>
+                Cinematic Film
+              </p>
             </div>
-
-            <span>2026</span>
-
+            <span>
+              2026
+            </span>
           </div>
-
         </article>
-
-
+        <!-- VIDEO 02 -->
         <article class="project-card reveal">
-
-          <div class="project-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1600&q=85"
-              alt="Film production"
+          <div class="project-image video-project">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
             >
-
-            <div class="project-number">02</div>
-
+              <source
+                src="media/video2.mp4"
+                type="video/mp4"
+              >
+            </video>
+            <div class="project-number">
+              02
+            </div>
             <div class="project-overlay">
-              <span>VIEW PROJECT →</span>
+              <span>
+                WATCH PROJECT →
+              </span>
             </div>
-
           </div>
-
           <div class="project-info">
-
             <div>
-              <h3>Human Stories</h3>
-              <p>Documentary</p>
+              <h3>
+                Human Stories
+              </h3>
+              <p>
+                Visual Story
+              </p>
             </div>
-
-            <span>2026</span>
-
+            <span>
+              2026
+            </span>
           </div>
-
         </article>
-
-
+        <!-- VIDEO 03 -->
         <article class="project-card reveal">
-
-          <div class="project-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1600&q=85"
-              alt="Music performance"
+          <div class="project-image video-project">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
             >
-
-            <div class="project-number">03</div>
-
+              <source
+                src="media/video3.mp4"
+                type="video/mp4"
+              >
+            </video>
+            <div class="project-number">
+              03
+            </div>
             <div class="project-overlay">
-              <span>VIEW PROJECT →</span>
+              <span>
+                WATCH PROJECT →
+              </span>
             </div>
-
           </div>
-
           <div class="project-info">
-
             <div>
-              <h3>Sound & Motion</h3>
-              <p>Music Visual</p>
+              <h3>
+                Sound & Motion
+              </h3>
+              <p>
+                Music Visual
+              </p>
             </div>
-
-            <span>2026</span>
-
+            <span>
+              2026
+            </span>
           </div>
-
         </article>
-
-
+        <!-- VIDEO 04 -->
         <article class="project-card reveal">
-
-          <div class="project-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=85"
-              alt="Creative studio"
+          <div class="project-image video-project">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
             >
-
-            <div class="project-number">04</div>
-
+              <source
+                src="media/video4.mp4"
+                type="video/mp4"
+              >
+            </video>
+            <div class="project-number">
+              04
+            </div>
             <div class="project-overlay">
-              <span>VIEW PROJECT →</span>
+              <span>
+                WATCH PROJECT →
+              </span>
             </div>
-
           </div>
-
           <div class="project-info">
-
             <div>
-              <h3>New Perspectives</h3>
-              <p>Commercial</p>
+              <h3>
+                New Perspectives
+              </h3>
+              <p>
+                Cinematic Visual
+              </p>
             </div>
-
-            <span>2026</span>
-
+            <span>
+              2026
+            </span>
           </div>
-
         </article>
-
       </div>
-
     </section>
-
-
-    <!-- CINEMATIC VIDEO -->
+    <!-- CINEMATIC BREAK -->
     <section class="cinema-break">
-
       <video
         autoplay
         muted
         loop
         playsinline
-        poster="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=2000&q=90"
+        preload="metadata"
       >
-        <source src="media/ambient.mp4" type="video/mp4">
+        <source
+          src="media/ambient.mp4"
+          type="video/mp4"
+        >
       </video>
-
       <div class="cinema-overlay"></div>
-
       <div class="cinema-content reveal">
-
-        <span>EVERY FRAME HAS A STORY</span>
-
+        <span>
+          EVERY FRAME HAS A STORY
+        </span>
         <h2>
           See the world
           <em>differently.</em>
         </h2>
-
       </div>
-
     </section>
-
-
     <!-- ABOUT -->
-    <section class="about section" id="about">
-
+    <section
+      class="about section"
+      id="about"
+    >
       <div class="section-label reveal">
         03 — ABOUT MAVSI
       </div>
-
       <div class="about-grid">
-
         <div class="about-image reveal">
-
           <img
-            src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=85"
-            alt="Professional camera"
+            src="media/mavsi.jpg"
+            alt="Emmanuel Chigozirim — Mavsi, Nigerian cinematographer"
           >
-
         </div>
-
         <div class="about-content reveal">
-
           <span class="small-title">
             THE PERSON BEHIND THE CAMERA
           </span>
-
           <h2>
             More than just
             <em>a camera.</em>
           </h2>
-
-         <p>
-  Mavsi is a Nigerian cinematographer and visual storyteller
-  passionate about turning ideas, emotions, and everyday
-  moments into powerful visual experiences.
-</p>
-
-<p>
-  Through film and photography, Mavsi explores creativity,
-  culture, people, and the stories that often go unnoticed.
-  Every frame is created with intention — from the lighting
-  and composition to the smallest detail — with the goal
-  of making visuals that don't just look good, but make
-  people feel something.
-</p>
-
-          <a href="#contact" class="text-link">
+          <p>
+            I'm Emmanuel Chigozirim, professionally known
+            as Mavsi. I'm a 22-year-old Nigerian
+            cinematographer, director and visual storyteller
+            from Delta State, Nigeria.
+          </p>
+          <p>
+            Through film and photography, I explore
+            creativity, culture, people and the stories
+            that often go unnoticed. Every frame is created
+            with intention — from lighting and composition
+            to the smallest detail — with the goal of making
+            visuals that don't just look good, but make
+            people feel something.
+          </p>
+          <a
+            href="#contact"
+            class="text-link"
+          >
             WORK WITH ME →
           </a>
-
         </div>
-
       </div>
-
     </section>
-
-
     <!-- STATS -->
     <section class="stats section">
-
       <div class="stat reveal">
-        <strong>∞</strong>
-        <span>Stories to tell</span>
+        <strong>
+          ∞
+        </strong>
+        <span>
+          Stories to tell
+        </span>
       </div>
-
       <div class="stat reveal">
-        <strong>24/7</strong>
-        <span>Creating</span>
+        <strong>
+          24/7
+        </strong>
+        <span>
+          Creating
+        </span>
       </div>
-
       <div class="stat reveal">
-        <strong>100%</strong>
-        <span>Creative energy</span>
+        <strong>
+          100%
+        </strong>
+        <span>
+          Creative energy
+        </span>
       </div>
-
       <div class="stat reveal">
-        <strong>1</strong>
-        <span>Vision</span>
+        <strong>
+          1
+        </strong>
+        <span>
+          Vision
+        </span>
       </div>
-
     </section>
-
-
     <!-- SERVICES -->
-    <section class="services section" id="services">
-
+    <section
+      class="services section"
+      id="services"
+    >
       <div class="section-heading reveal">
-
         <div>
-          <span class="section-number">04</span>
-          <h2>What I Do</h2>
+          <span class="section-number">
+            04
+          </span>
+          <h2>
+            What I Do
+          </h2>
         </div>
-
         <p>
           Visual production built around your story,
           your identity and your vision.
         </p>
-
       </div>
-
-
       <div class="services-grid">
-
         <article class="service reveal">
-
-          <span>01</span>
-
-          <h3>Cinematography</h3>
-
+          <span>
+            01
+          </span>
+          <h3>
+            Cinematography
+          </h3>
           <p>
             Cinematic visuals for films, brands,
             documentaries, events and creative projects.
           </p>
-
         </article>
-
-
         <article class="service reveal">
-
-          <span>02</span>
-
-          <h3>Photography</h3>
-
+          <span>
+            02
+          </span>
+          <h3>
+            Photography
+          </h3>
           <p>
             Portraits, lifestyle, events and
             editorial photography.
           </p>
-
         </article>
-
-
         <article class="service reveal">
-
-          <span>03</span>
-
-          <h3>Music Visuals</h3>
-
+          <span>
+            03
+          </span>
+          <h3>
+            Music Visuals
+          </h3>
           <p>
             Music videos, performance visuals,
             teasers and promotional content.
           </p>
-
         </article>
-
-
         <article class="service reveal">
-
-          <span>04</span>
-
-          <h3>Creative Direction</h3>
-
+          <span>
+            04
+          </span>
+          <h3>
+            Creative Direction
+          </h3>
           <p>
             Concept development, visual identity,
             moodboards and complete creative direction.
           </p>
-
         </article>
-
       </div>
-
     </section>
-
-
     <!-- PROCESS -->
     <section class="process section">
-
       <div class="section-heading reveal">
-
         <div>
-          <span class="section-number">05</span>
-          <h2>The Process</h2>
+          <span class="section-number">
+            05
+          </span>
+          <h2>
+            The Process
+          </h2>
         </div>
-
       </div>
-
-
       <div class="process-list">
-
         <div class="process-item reveal">
-
-          <span>01</span>
-
+          <span>
+            01
+          </span>
           <div>
-            <h3>Concept</h3>
+            <h3>
+              Concept
+            </h3>
             <p>
               We start with the idea, mood and story.
             </p>
           </div>
-
         </div>
-
-
         <div class="process-item reveal">
-
-          <span>02</span>
-
+          <span>
+            02
+          </span>
           <div>
-            <h3>Pre-Production</h3>
+            <h3>
+              Pre-Production
+            </h3>
             <p>
               Planning locations, shots, lighting,
               styling and everything needed to bring
               the vision together.
             </p>
           </div>
-
         </div>
-
-
         <div class="process-item reveal">
-
-          <span>03</span>
-
+          <span>
+            03
+          </span>
           <div>
-            <h3>Production</h3>
+            <h3>
+              Production
+            </h3>
             <p>
               This is where the camera rolls and
               the story comes alive.
             </p>
           </div>
-
         </div>
-
-
         <div class="process-item reveal">
-
-          <span>04</span>
-
+          <span>
+            04
+          </span>
           <div>
-            <h3>Final Cut</h3>
+            <h3>
+              Final Cut
+            </h3>
             <p>
               Editing, colour, sound and final
               cinematic polish.
             </p>
           </div>
-
         </div>
-
       </div>
-
     </section>
-
-
     <!-- GALLERY -->
-    <section class="gallery section" id="gallery">
-
+    <section
+      class="gallery section"
+      id="gallery"
+    >
       <div class="section-heading reveal">
-
         <div>
-          <span class="section-number">06</span>
-          <h2>Visual Journal</h2>
+          <span class="section-number">
+            06
+          </span>
+          <h2>
+            Visual Journal
+          </h2>
         </div>
-
         <p>
           Moments captured through my lens.
         </p>
-
       </div>
-
-
       <div class="gallery-grid">
-
         <div class="gallery-item reveal">
-
           <img
             src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=85"
             alt="Night city"
           >
-
         </div>
-
-
         <div class="gallery-item reveal">
-
           <img
             src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
             alt="Landscape"
           >
-
         </div>
-
-
         <div class="gallery-item reveal">
-
           <img
             src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
             alt="Creative visual"
           >
-
         </div>
-
-
         <div class="gallery-item reveal">
-
           <img
             src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
             alt="Creative workspace"
           >
-
         </div>
-
       </div>
-
     </section>
-
-
-    <!-- QUOTE -->
+    <!-- PHILOSOPHY -->
     <section class="words section">
-
       <div class="words-content reveal">
-
-        <span>MY PHILOSOPHY</span>
-
+        <span>
+          MY PHILOSOPHY
+        </span>
         <h2>
           Don't just capture
           <em>the moment.</em>
           Capture how it felt.
         </h2>
-
       </div>
-
     </section>
-
-
     <!-- CONTACT -->
-    <section class="contact section" id="contact">
-
+    <section
+      class="contact section"
+      id="contact"
+    >
       <div class="section-label reveal">
         07 — LET'S CREATE
       </div>
-
       <div class="contact-content reveal">
-
         <h2>
           Have a story
           <em>to tell?</em>
         </h2>
-
         <p>
           Let's turn your idea into something
           people won't forget.
         </p>
-
-        <a href="mailto:hello@mavsi.com" class="contact-email">
+        <a
+          href="mailto:hello@mavsi.com"
+          class="contact-email"
+        >
           hello@mavsi.com
         </a>
-
         <div class="social-links">
-
-          <a href="https://instagram.com/" target="_blank">
+          <a
+            href="https://www.instagram.com/heismavsi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Instagram
           </a>
-
-          <a href="https://tiktok.com/" target="_blank">
+          <a
+            href="https://www.tiktok.com/@heismavsi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             TikTok
           </a>
-
         </div>
-
       </div>
-
     </section>
-
   </main>
-
-
   <!-- FOOTER -->
   <footer>
-
     <div class="footer-logo">
       MAVSI
     </div>
-
     <p>
-      © <span id="year"></span> Mavsi. All rights reserved.
+      © <span id="year"></span>
+      Mavsi. All rights reserved.
     </p>
-
     <a href="#home">
       BACK TO TOP ↑
     </a>
-
   </footer>
-
-
   <!-- JAVASCRIPT -->
   <script>
-
     /* LOADER */
-
     window.addEventListener("load", function () {
-
       setTimeout(function () {
-
-        document
-          .querySelector(".page-loader")
-          .classList.add("loaded");
-
+        const loader =
+          document.querySelector(".page-loader");
+        if (loader) {
+          loader.classList.add("loaded");
+        }
       }, 500);
-
     });
-
-
     /* MOBILE MENU */
-
     const menuToggle =
       document.querySelector(".menu-toggle");
-
     const mobileMenu =
       document.querySelector(".mobile-menu");
-
     const menuClose =
       document.querySelector(".menu-close");
-
-
     menuToggle.addEventListener("click", function () {
-
       mobileMenu.classList.add("active");
-
       document.body.classList.add("menu-open");
-
     });
-
-
     menuClose.addEventListener("click", function () {
-
       mobileMenu.classList.remove("active");
-
       document.body.classList.remove("menu-open");
-
     });
-
-
     document
       .querySelectorAll(".mobile-menu a")
       .forEach(function (link) {
-
         link.addEventListener("click", function () {
-
           mobileMenu.classList.remove("active");
-
           document.body.classList.remove("menu-open");
-
         });
-
       });
-
-
     /* SCROLL ANIMATIONS */
-
     const revealElements =
       document.querySelectorAll(".reveal");
-
-
     const observer =
-      new IntersectionObserver(function (entries) {
-
-        entries.forEach(function (entry) {
-
-          if (entry.isIntersecting) {
-
-            entry.target.classList.add("visible");
-
-            observer.unobserve(entry.target);
-
-          }
-
-        });
-
-      }, {
-        threshold: 0.12
-      });
-
-
+      new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12
+        }
+      );
     revealElements.forEach(function (element) {
-
       observer.observe(element);
-
     });
-
-
     /* YEAR */
-
     document.getElementById("year").textContent =
       new Date().getFullYear();
-
-
     /* ESCAPE KEY */
-
-    document.addEventListener("keydown", function (event) {
-
-      if (event.key === "Escape") {
-
-        mobileMenu.classList.remove("active");
-
-        document.body.classList.remove("menu-open");
-
+    document.addEventListener(
+      "keydown",
+      function (event) {
+        if (event.key === "Escape") {
+          mobileMenu.classList.remove("active");
+          document.body.classList.remove("menu-open");
+        }
       }
-
-    });
-
+    );
   </script>
-
 </body>
-
-</html>}</html>
+</html></html>}</html>
