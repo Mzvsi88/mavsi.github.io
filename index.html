@@ -3,54 +3,198 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mavsi | The Creator — Emmanuel Chigozirim</title>
-  <meta
-    name="description"
-    content="Emmanuel Chigozirim, known as Mavsi, is a Nigerian cinematographer, director and visual storyteller from Delta State, Nigeria."
-  >
+
+  <title>Mavsi The Creator | Cinematographer & Filmmaker</title>
+
+  <meta name="description" content="Official portfolio of Mavsi The Creator, Nigerian cinematographer, filmmaker and visual storyteller. Explore cinematic films, creative projects and visual stories.">
+
   <meta name="author" content="Emmanuel Chigozirim">
   <meta name="robots" content="index, follow">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Mavsi | The Creator">
-  <meta
-    property="og:description"
-    content="Emmanuel Chigozirim — Nigerian Cinematographer, Director & Visual Storyteller."
-  >
-  <meta property="og:type" content="profile">
-  <meta property="og:site_name" content="Mavsi | The Creator">
+  <meta name="theme-color" content="#080808">
+
+  <meta property="og:title" content="Mavsi The Creator">
+  <meta property="og:description" content="Cinematography, filmmaking and visual storytelling by Mavsi The Creator.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="styles.css">
-  <!-- PERSON / PROFILE SCHEMA -->
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --background: #080808;
+      --green: #39ff88;
+      --white: #f5f5f5;
+      --muted: #a0a0a0;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--white);
+    }
+
+    .logo,
+    .footer-logo {
+      color: var(--green);
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: #050505;
+      font-weight: 700;
+    }
+
+    .btn-primary:hover {
+      background: #a0ffc5;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(
+        ellipse at 70% 45%,
+        transparent 0%,
+        rgba(0,0,0,.4) 65%,
+        rgba(0,0,0,.75) 100%
+      );
+    }
+
+    .hero-content,
+    .scroll-indicator {
+      z-index: 3;
+    }
+
+    .hero h1 span {
+      color: var(--green);
+    }
+
+    .green-text,
+    .about-content em,
+    .contact-content em {
+      color: var(--green);
+    }
+
+    .project-image video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: #050505;
+    }
+
+    .project-card {
+      cursor: default;
+    }
+
+    .project-overlay {
+      pointer-events: none;
+    }
+
+    .story-panel {
+      max-width: 900px;
+      margin: 60px auto 0;
+      padding: 45px;
+      border-left: 2px solid var(--green);
+      background: linear-gradient(
+        135deg,
+        #111,
+        #080808
+      );
+    }
+
+    .story-panel p {
+      color: var(--muted);
+      line-height: 1.9;
+      margin: 20px 0;
+    }
+
+    .story-date {
+      color: var(--green);
+      font-size: .7rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .contact-button {
+      display: inline-block;
+      padding: 16px 24px;
+      border: 1px solid var(--green);
+      color: var(--green);
+      transition: .3s ease;
+    }
+
+    .contact-button:hover {
+      background: var(--green);
+      color: #050505;
+    }
+
+    .social-links {
+      flex-wrap: wrap;
+    }
+
+    .social-links a:hover,
+    .text-link:hover {
+      color: var(--green);
+    }
+
+    .menu-toggle span {
+      background: var(--green);
+    }
+
+    .mobile-menu nav a:hover {
+      color: var(--green);
+    }
+
+    .video-note {
+      color: var(--muted);
+      font-size: .8rem;
+      line-height: 1.7;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .story-panel {
+        padding: 25px;
+      }
+
+      .contact-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "name": "Mavsi | The Creator",
-    "description": "Official portfolio of Emmanuel Chigozirim, Nigerian cinematographer, director and visual storyteller.",
+    "name": "Mavsi The Creator",
+    "description": "Official creative portfolio of Nigerian cinematographer and visual storyteller Mavsi The Creator.",
     "mainEntity": {
       "@type": "Person",
       "name": "Emmanuel Chigozirim",
       "alternateName": [
         "Mavsi",
-        "Mavsi | The Creator",
-        "@heismavsi"
+        "Mavsi The Creator",
+        "Heismavsi"
       ],
       "jobTitle": [
         "Cinematographer",
-        "Director",
+        "Filmmaker",
         "Visual Storyteller"
       ],
-      "description": "Nigerian cinematographer, director and visual storyteller from Delta State, Nigeria.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "Delta State",
-        "addressCountry": "NG"
-      },
+      "email": "Mavsimech@gmail.com",
       "sameAs": [
         "https://www.instagram.com/heismavsi/",
         "https://www.tiktok.com/@heismavsi"
@@ -59,715 +203,803 @@
   }
   </script>
 </head>
+
 <body>
+
   <!-- LOADING SCREEN -->
+
   <div class="page-loader">
-    <span>MAVSI</span>
+    <span>MAVSI THE CREATOR</span>
   </div>
+
   <!-- NAVIGATION -->
+
   <header class="navbar">
+
     <a href="#home" class="logo">
-      MAVSI
+      MAVSI<span class="green-text">.</span>
     </a>
+
     <nav class="desktop-nav">
       <a href="#work">Work</a>
       <a href="#about">About</a>
+      <a href="#story">My Story</a>
       <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button
-      class="menu-toggle"
-      aria-label="Open menu"
-      type="button"
-    >
+
+    <button class="menu-toggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      type="button">
+
       <span></span>
       <span></span>
       <span></span>
+
     </button>
+
   </header>
+
   <!-- MOBILE MENU -->
+
   <div class="mobile-menu">
-    <button
-      class="menu-close"
+
+    <button class="menu-close"
       aria-label="Close menu"
-      type="button"
-    >
-      ×
-    </button>
+      type="button">×</button>
+
     <nav>
       <a href="#home">Home</a>
-      <a href="#work">Work</a>
+      <a href="#work">My Work</a>
       <a href="#about">About</a>
+      <a href="#story">My Story</a>
       <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
+
   </div>
+
   <main>
+
     <!-- HERO -->
+
     <section class="hero" id="home">
-      <video
-        class="hero-video"
+
+      <video class="hero-video"
         autoplay
         muted
         loop
         playsinline
         preload="metadata"
-      >
-        <source src="media/hero.mp4" type="video/mp4">
+        aria-label="Cinematic background video">
+
+        <!-- Replace with your chosen background video when ready. -->
+
       </video>
+
       <div class="hero-overlay"></div>
+
       <div class="hero-content reveal">
+
         <p class="eyebrow">
-          EMMANUEL CHIGOZIRIM
+          INDEPENDENT FILMMAKER & VISUAL STORYTELLER
         </p>
+
         <h1>
           Mavsi
           <span>The Creator</span>
         </h1>
+
         <p class="role">
-          Cinematographer • Director • Visual Storyteller
+          Cinematographer · Filmmaker · Creative
         </p>
-        <p class="location">
-          Delta State, Nigeria
-        </p>
+
         <p class="hero-description">
-          Creating cinematic visuals that turn moments,
-          people and ideas into unforgettable stories.
+          I turn ideas, emotions and real-life moments
+          into cinematic visual stories.
         </p>
+
         <div class="hero-buttons">
+
           <a href="#work" class="btn btn-primary">
-            Explore my work
+            Explore My Work
           </a>
+
           <a href="#contact" class="btn btn-outline">
-            Let's work together
+            Let's Work Together
           </a>
+
         </div>
+
       </div>
+
       <div class="scroll-indicator">
-        <span>SCROLL</span>
+        <span>SCROLL TO EXPLORE</span>
         <div></div>
       </div>
+
     </section>
-    <!-- INTRO -->
+
+    <!-- INTRODUCTION -->
+
     <section class="intro section">
+
       <div class="section-label reveal">
         01 — INTRODUCTION
       </div>
+
       <div class="intro-content reveal">
+
         <p class="large-text">
-          I create visuals that feel
-          <em>alive.</em>
+          Every frame tells
+          <em class="green-text">a story.</em>
         </p>
+
         <p>
-          I'm Emmanuel Chigozirim, known creatively as Mavsi.
-          A Nigerian cinematographer, director and visual
-          storyteller from Delta State, creating visual stories
-          designed to make people feel something.
+          I'm Emmanuel Chigozirim, known creatively as
+          Mavsi The Creator. I explore filmmaking,
+          cinematography and visual storytelling to create
+          work that communicates emotion and meaning.
         </p>
+
       </div>
+
     </section>
-    <!-- WORK -->
+
+    <!-- PORTFOLIO -->
+
     <section class="work section" id="work">
+
       <div class="section-heading reveal">
+
         <div>
-          <span class="section-number">
-            02
-          </span>
-          <h2>
-            Selected Work
-          </h2>
+          <span class="section-number">02</span>
+          <h2>Selected Work</h2>
         </div>
+
         <p>
-          A collection of visual stories,
-          creative projects and cinematic moments.
+          Real moments. Human stories. Cinematic perspectives.
+          Welcome to my visual world.
         </p>
+
       </div>
+
       <div class="projects">
-        <!-- VIDEO 01 -->
+
+        <!-- 01: CHURCH RECAP -->
+
         <article class="project-card reveal">
+
           <div class="project-image video-project">
+
             <video
-              autoplay
+              controls
               muted
-              loop
               playsinline
-              preload="metadata"
-            >
+              preload="metadata">
+
               <source
-                src="media/video1.mp4"
-                type="video/mp4"
-              >
+                src="v14044g50000dbcdnmfog65lpojoq0a0.mp4"
+                type="video/mp4">
+
+              Your browser cannot play this video.
+
             </video>
-            <div class="project-number">
-              01
-            </div>
-            <div class="project-overlay">
-              <span>
-                WATCH PROJECT →
-              </span>
-            </div>
+
+            <div class="project-number">01</div>
+
           </div>
+
           <div class="project-info">
+
             <div>
-              <h3>
-                After Dark
-              </h3>
-              <p>
-                Cinematic Film
-              </p>
+              <h3>Church Recap</h3>
+              <p>Church Cinematography</p>
             </div>
-            <span>
-              2026
-            </span>
+
+            <span>FILM</span>
+
           </div>
+
         </article>
-        <!-- VIDEO 02 -->
+
+        <!-- 02: MARKETPLACE -->
+
         <article class="project-card reveal">
+
           <div class="project-image video-project">
-            <video
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            >
+
+            <video controls muted playsinline preload="metadata">
+
               <source
-                src="media/video2.mp4"
-                type="video/mp4"
-              >
+                src="12087892_3840_2160_25fps.MOV"
+                type="video/quicktime">
+
+              <source
+                src="12087892_3840_2160_25fps.MOV"
+                type="video/mp4">
+
+              Your browser cannot play this video.
+
             </video>
-            <div class="project-number">
-              02
-            </div>
-            <div class="project-overlay">
-              <span>
-                WATCH PROJECT →
-              </span>
-            </div>
+
+            <div class="project-number">02</div>
+
           </div>
+
           <div class="project-info">
+
             <div>
-              <h3>
-                Human Stories
-              </h3>
-              <p>
-                Visual Story
-              </p>
+              <h3>Marketplace</h3>
+              <p>Cinematography</p>
             </div>
-            <span>
-              2026
-            </span>
+
+            <span>FILM</span>
+
           </div>
+
         </article>
-        <!-- VIDEO 03 -->
+
+        <!-- 03: NIGERIA -->
+
         <article class="project-card reveal">
+
           <div class="project-image video-project">
-            <video
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            >
+
+            <video controls muted playsinline preload="metadata">
+
               <source
-                src="media/video3.mp4"
-                type="video/mp4"
-              >
+                src="4c5075c9ff8848fab30ddb916ff79054.mp4"
+                type="video/mp4">
+
+              Your browser cannot play this video.
+
             </video>
-            <div class="project-number">
-              03
-            </div>
-            <div class="project-overlay">
-              <span>
-                WATCH PROJECT →
-              </span>
-            </div>
+
+            <div class="project-number">03</div>
+
           </div>
+
           <div class="project-info">
+
             <div>
-              <h3>
-                Sound & Motion
-              </h3>
-              <p>
-                Music Visual
-              </p>
+              <h3>Nigeria</h3>
+              <p>Visual Storytelling</p>
             </div>
-            <span>
-              2026
-            </span>
+
+            <span>FILM</span>
+
           </div>
+
         </article>
-        <!-- VIDEO 04 -->
+
+        <!-- 04: ONE CALL AWAY -->
+
         <article class="project-card reveal">
+
           <div class="project-image video-project">
-            <video
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            >
+
+            <video controls muted playsinline preload="metadata">
+
               <source
-                src="media/video4.mp4"
-                type="video/mp4"
-              >
+                src="copy_D6CA083C-1985-4F40-B898-53F51FC8F566.mp4"
+                type="video/mp4">
+
+              Your browser cannot play this video.
+
             </video>
-            <div class="project-number">
-              04
-            </div>
-            <div class="project-overlay">
-              <span>
-                WATCH PROJECT →
-              </span>
-            </div>
+
+            <div class="project-number">04</div>
+
           </div>
+
           <div class="project-info">
+
             <div>
-              <h3>
-                New Perspectives
-              </h3>
-              <p>
-                Cinematic Visual
-              </p>
+              <h3>One Call Away</h3>
+              <p>Short Film</p>
             </div>
-            <span>
-              2026
-            </span>
+
+            <span>FILM</span>
+
           </div>
+
         </article>
+
+        <!-- 05: THE REALITY OF NIGERIA -->
+
+        <article class="project-card reveal">
+
+          <div class="project-image video-project">
+
+            <video controls muted playsinline preload="metadata">
+
+              <source
+                src="fa46579c31764415b46650ea60cf2713.mp4"
+                type="video/mp4">
+
+              Your browser cannot play this video.
+
+            </video>
+
+            <div class="project-number">05</div>
+
+          </div>
+
+          <div class="project-info">
+
+            <div>
+              <h3>The Reality of Nigeria</h3>
+              <p>Social Commentary</p>
+            </div>
+
+            <span>FILM</span>
+
+          </div>
+
+        </article>
+
       </div>
+
+      <p class="video-note">
+        Select a video to play it. Video playback depends on
+        browser support and the file format.
+      </p>
+
     </section>
+
     <!-- CINEMATIC BREAK -->
+
     <section class="cinema-break">
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="metadata"
-      >
-        <source
-          src="media/ambient.mp4"
-          type="video/mp4"
-        >
-      </video>
+
       <div class="cinema-overlay"></div>
+
       <div class="cinema-content reveal">
-        <span>
-          EVERY FRAME HAS A STORY
-        </span>
+
+        <span>MY CREATIVE PHILOSOPHY</span>
+
         <h2>
-          See the world
-          <em>differently.</em>
+          Every frame has
+          <em class="green-text">a story.</em>
         </h2>
+
       </div>
+
     </section>
+
     <!-- ABOUT -->
-    <section
-      class="about section"
-      id="about"
-    >
+
+    <section class="about section" id="about">
+
       <div class="section-label reveal">
         03 — ABOUT MAVSI
       </div>
+
       <div class="about-grid">
+
         <div class="about-image reveal">
+
           <img
             src="media/mavsi.jpg"
-            alt="Emmanuel Chigozirim — Mavsi, Nigerian cinematographer"
-          >
+            alt="Mavsi The Creator"
+            loading="lazy"
+            onerror="this.style.display='none'; this.parentElement.style.display='none';">
+
         </div>
+
         <div class="about-content reveal">
+
           <span class="small-title">
             THE PERSON BEHIND THE CAMERA
           </span>
+
           <h2>
-            More than just
-            <em>a camera.</em>
+            Creating with
+            <em>purpose.</em>
           </h2>
+
           <p>
             I'm Emmanuel Chigozirim, professionally known
-            as Mavsi. I'm a 22-year-old Nigerian
-            cinematographer, director and visual storyteller
-            from Delta State, Nigeria.
+            as Mavsi The Creator.
           </p>
+
           <p>
-            Through film and photography, I explore
-            creativity, culture, people and the stories
-            that often go unnoticed. Every frame is created
-            with intention — from lighting and composition
-            to the smallest detail — with the goal of making
-            visuals that don't just look good, but make
-            people feel something.
+            My creative interests include cinematography,
+            filmmaking, editing and visual storytelling.
+            Through my work, I aim to capture people,
+            culture, emotions and everyday experiences
+            in ways that connect with audiences.
           </p>
-          <a
-            href="#contact"
-            class="text-link"
-          >
+
+          <p>
+            Every project is an opportunity to learn,
+            experiment and tell a story worth remembering.
+          </p>
+
+          <a href="#contact" class="text-link">
             WORK WITH ME →
           </a>
+
         </div>
+
       </div>
+
     </section>
-    <!-- STATS -->
-    <section class="stats section">
-      <div class="stat reveal">
-        <strong>
-          ∞
-        </strong>
-        <span>
-          Stories to tell
-        </span>
+
+    <!-- PERSONAL STORY -->
+
+    <section class="section" id="story">
+
+      <div class="section-label reveal">
+        04 — MY STORY
       </div>
-      <div class="stat reveal">
-        <strong>
-          24/7
-        </strong>
-        <span>
-          Creating
-        </span>
-      </div>
-      <div class="stat reveal">
-        <strong>
-          100%
-        </strong>
-        <span>
-          Creative energy
-        </span>
-      </div>
-      <div class="stat reveal">
-        <strong>
-          1
-        </strong>
-        <span>
-          Vision
-        </span>
-      </div>
-    </section>
-    <!-- SERVICES -->
-    <section
-      class="services section"
-      id="services"
-    >
+
       <div class="section-heading reveal">
+
         <div>
-          <span class="section-number">
-            04
-          </span>
-          <h2>
-            What I Do
-          </h2>
+          <h2>The Journey</h2>
         </div>
+
         <p>
-          Visual production built around your story,
-          your identity and your vision.
+          Every journey has a beginning. This is part of mine.
         </p>
+
       </div>
-      <div class="services-grid">
-        <article class="service reveal">
-          <span>
-            01
-          </span>
-          <h3>
-            Cinematography
-          </h3>
-          <p>
-            Cinematic visuals for films, brands,
-            documentaries, events and creative projects.
-          </p>
-        </article>
-        <article class="service reveal">
-          <span>
-            02
-          </span>
-          <h3>
-            Photography
-          </h3>
-          <p>
-            Portraits, lifestyle, events and
-            editorial photography.
-          </p>
-        </article>
-        <article class="service reveal">
-          <span>
-            03
-          </span>
-          <h3>
-            Music Visuals
-          </h3>
-          <p>
-            Music videos, performance visuals,
-            teasers and promotional content.
-          </p>
-        </article>
-        <article class="service reveal">
-          <span>
-            04
-          </span>
-          <h3>
-            Creative Direction
-          </h3>
-          <p>
-            Concept development, visual identity,
-            moodboards and complete creative direction.
-          </p>
-        </article>
-      </div>
-    </section>
-    <!-- PROCESS -->
-    <section class="process section">
-      <div class="section-heading reveal">
-        <div>
-          <span class="section-number">
-            05
-          </span>
-          <h2>
-            The Process
-          </h2>
-        </div>
-      </div>
-      <div class="process-list">
-        <div class="process-item reveal">
-          <span>
-            01
-          </span>
-          <div>
-            <h3>
-              Concept
-            </h3>
-            <p>
-              We start with the idea, mood and story.
-            </p>
-          </div>
-        </div>
-        <div class="process-item reveal">
-          <span>
-            02
-          </span>
-          <div>
-            <h3>
-              Pre-Production
-            </h3>
-            <p>
-              Planning locations, shots, lighting,
-              styling and everything needed to bring
-              the vision together.
-            </p>
-          </div>
-        </div>
-        <div class="process-item reveal">
-          <span>
-            03
-          </span>
-          <div>
-            <h3>
-              Production
-            </h3>
-            <p>
-              This is where the camera rolls and
-              the story comes alive.
-            </p>
-          </div>
-        </div>
-        <div class="process-item reveal">
-          <span>
-            04
-          </span>
-          <div>
-            <h3>
-              Final Cut
-            </h3>
-            <p>
-              Editing, colour, sound and final
-              cinematic polish.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- GALLERY -->
-    <section
-      class="gallery section"
-      id="gallery"
-    >
-      <div class="section-heading reveal">
-        <div>
-          <span class="section-number">
-            06
-          </span>
-          <h2>
-            Visual Journal
-          </h2>
-        </div>
-        <p>
-          Moments captured through my lens.
-        </p>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item reveal">
-          <img
-            src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=85"
-            alt="Night city"
-          >
-        </div>
-        <div class="gallery-item reveal">
-          <img
-            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
-            alt="Landscape"
-          >
-        </div>
-        <div class="gallery-item reveal">
-          <img
-            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
-            alt="Creative visual"
-          >
-        </div>
-        <div class="gallery-item reveal">
-          <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
-            alt="Creative workspace"
-          >
-        </div>
-      </div>
-    </section>
-    <!-- PHILOSOPHY -->
-    <section class="words section">
-      <div class="words-content reveal">
-        <span>
-          MY PHILOSOPHY
+
+      <div class="story-panel reveal">
+
+        <span class="story-date">
+          LAGOS, NIGERIA · OCTOBER 12
         </span>
-        <h2>
-          Don't just capture
-          <em>the moment.</em>
-          Capture how it felt.
+
+        <h2 style="font-family:'Playfair Display',serif;
+                   font-weight:400;
+                   font-size:clamp(2rem,5vw,4rem);
+                   margin-top:20px;">
+
+          My story is still being written.
+
         </h2>
+
+        <p>
+          I was born in Lagos, Nigeria, on October 12.
+          In 2019, family issues led to my relocation
+          to Onitsha, Anambra State.
+        </p>
+
+        <p>
+          Moving to a different place became part of my
+          life journey. My experiences continue to shape
+          the person I am and the stories I want to tell
+          through my creative work.
+        </p>
+
+        <p>
+          Today, as Mavsi The Creator, I'm developing
+          my craft in cinematography, filmmaking and
+          visual storytelling. I want my work to capture
+          meaningful moments, express emotions and give
+          people stories they can connect with.
+        </p>
+
+        <p class="green-text">
+          This is my journey. This is my vision.
+          And this is only the beginning.
+        </p>
+
       </div>
+
     </section>
+
+    <!-- SERVICES -->
+
+    <section class="services section" id="services">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="section-number">05</span>
+          <h2>What I Do</h2>
+        </div>
+
+        <p>
+          Creative visual services designed to bring
+          ideas and stories to life.
+        </p>
+
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service reveal">
+          <span>01</span>
+          <h3>Cinematography</h3>
+          <p>
+            Cinematic visuals for creative projects,
+            events and storytelling.
+          </p>
+        </article>
+
+        <article class="service reveal">
+          <span>02</span>
+          <h3>Filmmaking</h3>
+          <p>
+            Short films and visual narratives built
+            around compelling ideas.
+          </p>
+        </article>
+
+        <article class="service reveal">
+          <span>03</span>
+          <h3>Video Editing</h3>
+          <p>
+            Editing, pacing, transitions and colour
+            grading for engaging visual content.
+          </p>
+        </article>
+
+        <article class="service reveal">
+          <span>04</span>
+          <h3>Creative Direction</h3>
+          <p>
+            Developing concepts and visual approaches
+            for creative productions.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- GALLERY -->
+
+    <section class="gallery section" id="gallery">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="section-number">06</span>
+          <h2>Visual Journal</h2>
+        </div>
+
+        <p>
+          A space for photographs and behind-the-scenes
+          moments from my creative journey.
+        </p>
+
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item reveal">
+          <img
+            src="media/gallery1.jpg"
+            alt="Mavsi visual journal photograph one"
+            loading="lazy">
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="media/gallery2.jpg"
+            alt="Mavsi visual journal photograph two"
+            loading="lazy">
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="media/gallery3.jpg"
+            alt="Mavsi visual journal photograph three"
+            loading="lazy">
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="media/gallery4.jpg"
+            alt="Mavsi visual journal photograph four"
+            loading="lazy">
+        </div>
+
+      </div>
+
+    </section>
+
     <!-- CONTACT -->
-    <section
-      class="contact section"
-      id="contact"
-    >
+
+    <section class="contact section" id="contact">
+
       <div class="section-label reveal">
         07 — LET'S CREATE
       </div>
+
       <div class="contact-content reveal">
+
         <h2>
           Have a story
           <em>to tell?</em>
         </h2>
+
         <p>
-          Let's turn your idea into something
-          people won't forget.
+          Have a creative project, film idea or collaboration
+          in mind? Get in touch, and let's talk about it.
         </p>
+
         <a
-          href="mailto:hello@mavsi.com"
           class="contact-email"
-        >
-          hello@mavsi.com
+          href="mailto:Mavsimech@gmail.com">
+
+          Mavsimech@gmail.com
+
         </a>
+
+        <div class="contact-buttons">
+
+          <a
+            class="contact-button"
+            href="https://wa.me/2347026906976"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Chat on WhatsApp →
+
+          </a>
+
+          <a
+            class="contact-button"
+            href="mailto:Mavsimech@gmail.com">
+
+            Send an Email →
+
+          </a>
+
+        </div>
+
         <div class="social-links">
+
           <a
             href="https://www.instagram.com/heismavsi/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
+
             Instagram
+
           </a>
+
           <a
             href="https://www.tiktok.com/@heismavsi"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
+
             TikTok
+
           </a>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
+
   <!-- FOOTER -->
+
   <footer>
+
     <div class="footer-logo">
-      MAVSI
+      MAVSI<span class="green-text">.</span>
     </div>
+
     <p>
       © <span id="year"></span>
-      Mavsi. All rights reserved.
+      Mavsi The Creator. All rights reserved.
     </p>
-    <a href="#home">
-      BACK TO TOP ↑
-    </a>
+
+    <a href="#home">BACK TO TOP ↑</a>
+
   </footer>
+
   <!-- JAVASCRIPT -->
+
   <script>
-    /* LOADER */
-    window.addEventListener("load", function () {
+    document.addEventListener("DOMContentLoaded", function () {
+
+      // LOADING SCREEN
+      const loader = document.querySelector(".page-loader");
+
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          if (loader) {
+            loader.classList.add("loaded");
+          }
+        }, 400);
+      });
+
+      // SAFETY: Hide the loader even if some resources load slowly.
       setTimeout(function () {
-        const loader =
-          document.querySelector(".page-loader");
         if (loader) {
           loader.classList.add("loaded");
         }
-      }, 500);
-    });
-    /* MOBILE MENU */
-    const menuToggle =
-      document.querySelector(".menu-toggle");
-    const mobileMenu =
-      document.querySelector(".mobile-menu");
-    const menuClose =
-      document.querySelector(".menu-close");
-    menuToggle.addEventListener("click", function () {
-      mobileMenu.classList.add("active");
-      document.body.classList.add("menu-open");
-    });
-    menuClose.addEventListener("click", function () {
-      mobileMenu.classList.remove("active");
-      document.body.classList.remove("menu-open");
-    });
-    document
-      .querySelectorAll(".mobile-menu a")
-      .forEach(function (link) {
-        link.addEventListener("click", function () {
+      }, 4000);
+
+      // MOBILE NAVIGATION
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const menuClose = document.querySelector(".menu-close");
+
+      function closeMenu() {
+        if (mobileMenu) {
           mobileMenu.classList.remove("active");
-          document.body.classList.remove("menu-open");
-        });
-      });
-    /* SCROLL ANIMATIONS */
-    const revealElements =
-      document.querySelectorAll(".reveal");
-    const observer =
-      new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        {
-          threshold: 0.12
         }
-      );
-    revealElements.forEach(function (element) {
-      observer.observe(element);
-    });
-    /* YEAR */
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-    /* ESCAPE KEY */
-    document.addEventListener(
-      "keydown",
-      function (event) {
-        if (event.key === "Escape") {
-          mobileMenu.classList.remove("active");
-          document.body.classList.remove("menu-open");
+
+        document.body.classList.remove("menu-open");
+
+        if (menuToggle) {
+          menuToggle.setAttribute("aria-expanded", "false");
         }
       }
-    );
+
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener("click", function () {
+          mobileMenu.classList.add("active");
+          document.body.classList.add("menu-open");
+          menuToggle.setAttribute("aria-expanded", "true");
+        });
+      }
+
+      if (menuClose) {
+        menuClose.addEventListener("click", closeMenu);
+      }
+
+      document.querySelectorAll(".mobile-menu nav a")
+        .forEach(function (link) {
+          link.addEventListener("click", closeMenu);
+        });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeMenu();
+        }
+      });
+
+      // SCROLL REVEAL
+      const revealElements = document.querySelectorAll(".reveal");
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          function (entries, observerInstance) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observerInstance.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12 }
+        );
+
+        revealElements.forEach(function (element) {
+          observer.observe(element);
+        });
+      } else {
+        revealElements.forEach(function (element) {
+          element.classList.add("visible");
+        });
+      }
+
+      // COPYRIGHT YEAR
+      const year = document.getElementById("year");
+
+      if (year) {
+        year.textContent = new Date().getFullYear();
+      }
+
+      // VIDEO PLAYBACK
+      // Videos have controls so visitors can play and pause them.
+      // Autoplay is not forced for every portfolio video.
+
+    });
   </script>
+
 </body>
-</html></html>}</html>
+</html></html></html>}</html>
